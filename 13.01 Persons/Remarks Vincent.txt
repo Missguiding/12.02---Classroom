@@ -4,23 +4,28 @@
 
 - Do you have 6 variables? (you have 1).
   - And the one you have is not asked
+ LL - I thought properties were variables so I put the two togheter.
 
 - Do you have 7 properties? (you have 8).
 
 - You must correct this, really, because it makes your class unusable (because it is an agreement / a contract).
   - You have decided to make it differently.
-
+ 
   - What is the problem?
     - There is no method ShowInformation.
       - I'm the other programmer that expects a ShowInformation method
+      LL - I get it. 
+
     - There is a property AllInformation instead.
       - This property is useless, because it is the method ShowInformation
+      
     - This is bad coding
       - Because AllInformation copies all the data for a second time in your class
       - 
       - The same thing can be said for _strAdress (typo in your name)
         - It copies all the information a second time in your class.
         - the variable should be in the getter scope, not in the class scope
+        LL - ok
 
     - Having twice the same data in a class is always a bad idea.
 
@@ -29,6 +34,7 @@
   
 Your other classes are correct programming (in the state person is)
 - Typo in Compagny --> Company
+LL - ok
 
 The testprogram I have to test your code, fails.
 - I have errors wherever I use "ShowInformation".

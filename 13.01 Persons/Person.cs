@@ -1,69 +1,56 @@
 ﻿using System;
 
 
-    namespace Persons
+namespace Persons
+{
+    class Person
     {
-        class Person
+        private string _strName; // fields
+        private DateTime _dtmBirthdate;
+        private string _strStreet;
+        private string _strHouseNumber;
+        private string _strZipCode;
+        private string _strCity;
+
+        public string Name { get; set; } // automatic property 
+
+        public DateTime BirthDate { get; set; } // automatic property 
+
+        public string Street { get; set; } // automatic property  
+
+        public string HouseNumber { get; set; } // automatic property  
+
+        public string ZipCode { get; set; } // automatic property  
+
+        public string City { get; set; } //field and automatic property 
+       
+        public string Address       // dynamic property - get's street, number, zipcode and city, returns full adress
         {
-            private string _strAdress; // field
-
-
-            public string Name { get; set; } // field and automatic property 
-
-            public DateTime BirthDate { get; set; } // field and automatic property 
-
-            public string Street { get; set; } // field and automatic property 
-
-            public string HouseNumber { get; set; } // field and automatic property 
-
-            public string ZipCode { get; set; } // field and automatic property 
-
-            public string City { get; set; } //field and automatic property 
-
-            private string Adress // dynamic property - get's street, number, zipcode and city, returns full adress
+            get
             {
-                get
-                {
-                    _strAdress = Street + " " + HouseNumber + "\n" + ZipCode + " " + City;
-                    return _strAdress;
-                }
-                set
-                {
-                    value = _strAdress;
-                }
+                string _strAddress = Street + " " + HouseNumber + "\n" + ZipCode + " " + City;
+                return _strAddress;
             }
+            
+        }        
 
-            public virtual string AllInformation // property using method
-            {
-                get
-                {
-                    return ShowInformation();
-                }
+        public virtual object ShowInformation() // method for showing the information of the class 
+        {
+            string _strPersonsInfo = BirthDate + "\n" + Name + "\n" + Address + "\n";
 
-                set
-                {
-                    value = ShowInformation();
-                }
+            return _strPersonsInfo;
+        }
 
-            }
-
-            private string ShowInformation() // method for showing the information of the class 
-            {
-                string _strPersonsInfo = BirthDate + "\n" + Name + "\n" + Adress + "\n";
-
-                return _strPersonsInfo;
-            }
-
-            public Person(string _strName, DateTime _dtmBirthDate, string _strStreet, string _strHouseNumber, string _strZipCode, string _strCity) // constructor with 6 properties
-            {
-                Name = _strName;
-                BirthDate = _dtmBirthDate;
-                Street = _strStreet;
-                HouseNumber = _strHouseNumber;
-                ZipCode = _strZipCode;
-                City = _strCity;
-            }
+        public Person(string _strName, DateTime _dtmBirthDate, string _strStreet, string _strHouseNumber, string _strZipCode, string _strCity) // constructor with 6 properties
+        {
+            Name = _strName;
+            BirthDate = _dtmBirthDate;
+            Street = _strStreet;
+            HouseNumber = _strHouseNumber;
+            ZipCode = _strZipCode;
+            City = _strCity;
         }
     }
+}
 
 

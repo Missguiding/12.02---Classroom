@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E645E952-40C7-4259-9706-C2F40AC8073E}</ProjectGuid>
+    <ProjectGuid>{93A4BA72-F967-489A-B6BA-F7201E4C1F7F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Classroom</RootNamespace>
-    <AssemblyName>Classroom</AssemblyName>
+    <RootNamespace>_13._02___Mathematics</RootNamespace>
+    <AssemblyName>13.02 - Mathematics</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Person.cs" />
-    <Compile Include="TestClassroom.cs" />
+    <Compile Include="Polygon.cs" />
+    <Compile Include="Rectangle.cs" />
+    <Compile Include="RightTriangle.cs" />
+    <Compile Include="Square.cs" />
+    <Compile Include="TestMathematics.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Remarks Vincent.txt" />
+    <None Include="Mathematics.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,22 +1,32 @@
 ﻿20230507 - VVDW
 - Is there a reason why the properties FirstName and Lastname are private?
+LL - changed it.
 - For this exercise it is ok, because I don't needed them outside the class.
 - In the real life use of properties, normally they are public.
 
 - Why is the datatype of AgeInDays double if you always convert it to integers?
+LL - Converted it in the propery.
 
 - The age in years is not correctly programmed.
   - Reason: You've mixed a normal property with an automatic property (automatic properties does not have a variable)
   -         You use in your calcuation a variable that is not filled with your automatic property.
+  LL - I did not know that, I'll keep it in mind.
+  LL - I changed it, it should be correct now.
   - Tip: When there is a property, use it in all your methods or other properties that calculated with it
   - In the test program I've place my birthday on the 20th of may. I should be 52 and not 53.
   - You are the first tester of your program. The age of gilbert is also wrong. Gilbert is 83 and not 84.
+  LL - That was the problem ...!
 
   - In the result of your testprogramma (I've added some tests)
   - You don't show the name of the persons. This is anoying.
+  LL - The less 'public', the less you can destroy :-) 
+  LL - changed it.
   - You copied a whole block of code in your test
     - I've had to add my tests also twice.
     - I've expected there is a method (you must decide if the method must be in the class or not)
+    LL - ok, should be beter now?
 
 - Have you tried to give a person a birthday in the future?
+LL - I did not think of that, changed it.
   - Whatever I can do in the class (I can change the birthday), it must give a correct result.
+  LL - I think its ok now.
