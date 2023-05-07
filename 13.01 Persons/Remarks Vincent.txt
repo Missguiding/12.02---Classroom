@@ -1,0 +1,38 @@
+﻿20230507 - VVDW 
+- I just looked at the class Person (I did not do the rest).
+- There are hugh problems with it (because you don't do what is asked).
+
+- Do you have 6 variables? (you have 1).
+  - And the one you have is not asked
+
+- Do you have 7 properties? (you have 8).
+
+- You must correct this, really, because it makes your class unusable (because it is an agreement / a contract).
+  - You have decided to make it differently.
+
+  - What is the problem?
+    - There is no method ShowInformation.
+      - I'm the other programmer that expects a ShowInformation method
+    - There is a property AllInformation instead.
+      - This property is useless, because it is the method ShowInformation
+    - This is bad coding
+      - Because AllInformation copies all the data for a second time in your class
+      - 
+      - The same thing can be said for _strAdress (typo in your name)
+        - It copies all the information a second time in your class.
+        - the variable should be in the getter scope, not in the class scope
+
+    - Having twice the same data in a class is always a bad idea.
+
+  - Why has Adress a setter?
+  - Why has AllInformation a setter?
+  
+Your other classes are correct programming (in the state person is)
+- Typo in Compagny --> Company
+
+The testprogram I have to test your code, fails.
+- I have errors wherever I use "ShowInformation".
+
+Do you understand what I'm trying to say here?
+
+
