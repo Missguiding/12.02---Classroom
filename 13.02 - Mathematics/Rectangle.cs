@@ -16,6 +16,8 @@
         {
             int _intResultArea = Width * Height;        
             return _intResultArea;
+            // VVDW - from now on you can and may shortcut :-) you understand it
+            // VVDW - return Width * Height
         }
 
         public int CircumferenceRectangle() // method to calculate circumference

@@ -3,6 +3,7 @@
     class Square : Rectangle 
     {
         public Square(int _intWidth, string _strColor) : base(_intWidth, _intWidth, _strColor) // constructor , inherints from rectangle
+        // VVDW - Yes, yes, yes. Very good
         {
             Height = Width;            
         }

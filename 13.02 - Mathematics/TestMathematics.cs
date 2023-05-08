@@ -31,12 +31,15 @@ namespace _13._02___Mathematics
             Console.WriteLine("\n" + square1.Color);
             Console.WriteLine("Square: " + square1.Color + "\n" + square1.Height + "\n" + square1.Width + "\n" + square1.AreaRectangle() + "\n" + square1.CircumferenceRectangle() + "\n");
 
-            rt1.Height = 100;
-            rt1.Base = 210;
+            rt1.Height = 4;
+            rt1.Base = 3;
             Console.WriteLine("\n" + rt1.Color);
             Console.WriteLine("RightTriangle: " + rt1.Color + "\n" + rt1.Base + "\n" + rt1.Height + "\n" + rt1.AreaRightTriangle() + "\n" + rt1.CircumfenceRightTriangle() + "\n");
            
             Console.ReadLine();
+      
+      // VVDW - very good
+      // VVDW - I've changed the values of your RightTriangle to check the correctness.
 
         }
     }

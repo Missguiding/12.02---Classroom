@@ -1,11 +1,14 @@
 ﻿20230507 - VVDW
 - Is there a reason why the properties FirstName and Lastname are private?
 LL - changed it.
+VVDW - Perfect.
+
 - For this exercise it is ok, because I don't needed them outside the class.
 - In the real life use of properties, normally they are public.
 
 - Why is the datatype of AgeInDays double if you always convert it to integers?
 LL - Converted it in the propery.
+VVDW - Perfect.
 
 - The age in years is not correctly programmed.
   - Reason: You've mixed a normal property with an automatic property (automatic properties does not have a variable)
@@ -16,17 +19,39 @@ LL - Converted it in the propery.
   - In the test program I've place my birthday on the 20th of may. I should be 52 and not 53.
   - You are the first tester of your program. The age of gilbert is also wrong. Gilbert is 83 and not 84.
   LL - That was the problem ...!
+  VVDW - Checked
+       - Stop placing writelines in your get and set properties.
+       - They are annoying when you use the properties.
+         - Who says I want to show this on the screen.
+         - Maybe I want to create a report (on paper)
+         - When there are 1000 names in the report, you will have 1000 writelines when getting the age.
 
   - In the result of your testprogramma (I've added some tests)
   - You don't show the name of the persons. This is anoying.
   LL - The less 'public', the less you can destroy :-) 
+
   LL - changed it.
   - You copied a whole block of code in your test
     - I've had to add my tests also twice.
     - I've expected there is a method (you must decide if the method must be in the class or not)
     LL - ok, should be beter now?
+    VVDW - Much better, but try to avoid writelines in your getters and setter.
+         - Put in your class only the things that must be done always in all cases.
 
 - Have you tried to give a person a birthday in the future?
 LL - I did not think of that, changed it.
   - Whatever I can do in the class (I can change the birthday), it must give a correct result.
   LL - I think its ok now.
+  VVDW - Very good solution, but it should be in the set.
+       - The moment you set a wrong date, you correct it.
+       - What is the solution now.
+         - You can put a date in the future in it.
+         - Every time you read the value, you get a recalculate it and you change a value in the class.
+           - GET should never change a value (except you really want to)
+       - This line of code is doing 2 things
+         return _dtmDateOfBirth = DateTime.Today;
+       - Changing the value, and return it.
+       - You have your variable _dtmDateOfBirth public
+         - This means I can change the value without using the property.
+           - So I can put and read a value in the future from your class.
+

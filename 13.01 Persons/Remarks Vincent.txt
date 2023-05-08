@@ -1,10 +1,16 @@
-﻿20230507 - VVDW 
+﻿20230507 - VVDW
+20230508 - VVDW (inside the previous remarks)
+
 - I just looked at the class Person (I did not do the rest).
 - There are hugh problems with it (because you don't do what is asked).
 
 - Do you have 6 variables? (you have 1).
   - And the one you have is not asked
  LL - I thought properties were variables so I put the two togheter.
+ 
+ VVDW - You are mixing again 2 things
+      - Automatic properties does not use the variables you have created.
+      - It can't be automatic properties here.
 
 - Do you have 7 properties? (you have 8).
 
@@ -15,6 +21,7 @@
     - There is no method ShowInformation.
       - I'm the other programmer that expects a ShowInformation method
       LL - I get it. 
+      VVDW - Why is the data type object? It is a string
 
     - There is a property AllInformation instead.
       - This property is useless, because it is the method ShowInformation
@@ -40,5 +47,14 @@ The testprogram I have to test your code, fails.
 - I have errors wherever I use "ShowInformation".
 
 Do you understand what I'm trying to say here?
+
+VVDW - Constructor person
+     - only use _ for variables at the scope of the class.
+     - remove the _ in the variable names here
+
+VVDW - All the rest is pixel perfect.
+     - Testprogram
+     - Employee and student.
+     - Great !!!
 
 

@@ -4,6 +4,8 @@ namespace _13._02___Mathematics
 {
     class RightTriangle : Polygon
     {
+    // VVDW - perfect
+
         public RightTriangle(int _intBase, int _intHeight, string _strColor) : base(_strColor) // constructor, inherints from polygon
         {
             Base = _intBase;
