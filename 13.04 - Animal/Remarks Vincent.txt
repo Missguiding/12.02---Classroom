@@ -1,0 +1,17 @@
+﻿20230523 - VVDW
+- You have a class diagram.
+	- Yes, yes, yes
+- Your class Animal is the absolute minimum :-)
+  - No name, just eating :-)
+  - Virtual eating - Very good.
+- Your class Mammal
+  - Perfect
+- Your class Cat
+  - Perfect
+- Your class Mouse
+  - Perfect
+- Your class TestProgram
+  - Perfect
+
+
+Good exercise.
