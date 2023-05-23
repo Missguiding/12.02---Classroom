@@ -1,0 +1,17 @@
+﻿20230523 - VVDW
+- Main() is moved towards "TestProgram"
+  - Very good
+- Tutorial is an abstract class
+  - So all the implementation is done in CopyPasteTutorial.
+  - Very good
+- Naming of your variables
+  - Never use "_" if it is not a private variable used for a property of a class
+  - This will be confusing for other programmers.
+  - "_" is used for private variables in a class.
+- Don't you think that a space between the key and the descriptions would be nice?
+
+- Good exercise.
+  - Put a symbol between the key and the description in "GetTutorial" :-)
+
+
+
