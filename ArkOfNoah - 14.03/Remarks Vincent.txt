@@ -1,0 +1,18 @@
+﻿20230523 - VVDW
+- It is better to create different files for every class
+  - Your work can be more "readable" that way.
+  - You do not have to "copy paste" that, you can do it in one shot.
+    - Select it, right click on it, select "quick actions and refactorings", choose the good option
+
+- Why you have problems with this exercise.
+  - AllThePandas should not inherit from Panda
+    - This is why it does not work
+    - AllThePandas is not an "extension" of Panda
+  - AllThePandas is not a special kind of Panda, it contains a list of Panda
+  - Never use _ in variables that are public
+    - The list should not be public, but private
+    - It is a list of strings, it should be a list of Panda
+
+  - You don't add the name of the panda, you add the panda itself to the list
+
+
