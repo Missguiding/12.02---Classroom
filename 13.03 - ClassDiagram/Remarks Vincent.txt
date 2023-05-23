@@ -1,0 +1,8 @@
+﻿20230523 - VVDW
+- Why is Gender in Person an integer?
+	- What is 0? What is 1? What is 25?
+- The testprogram does not work
+  - I see that in your comment :-)
+	- So with the class diagram, you make your "framework"
+
+Good exercise.

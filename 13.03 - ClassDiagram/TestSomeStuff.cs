@@ -28,11 +28,11 @@ namespace _13._03___ClassDiagram
             //studOne.Class = "F30";
             //studOne.Name = "Elke";
 
-            //Employee empOne = new Employee();
-            //empOne.Name = "Piet";
-            //empOne.Gender = 2;
-            //empOne.Company = "bpost";
-            //empOne.Wage = 2987.23M;
+            Employee empOne = new Employee();
+            empOne.Name = "Piet";
+            empOne.Gender = 2;
+            empOne.Company = "bpost";
+            empOne.Wage = 2987.23M;
 
             //Teacher teaOne = new Teacher();
             //teaOne.Name = "Luc";
@@ -42,10 +42,10 @@ namespace _13._03___ClassDiagram
             //teaOne.CanDuringDayTime = true;
             //teaOne.CanDuringEvening = false;
 
-            //Console.WriteLine(empOne.Name);
+            Console.WriteLine(empOne.Name);
                  // I did not change any code so this does not work 
 
-            //Console.ReadLine();
+            Console.ReadLine();
 
 
         }
