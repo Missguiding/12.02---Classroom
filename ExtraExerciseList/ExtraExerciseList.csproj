@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C866223-0396-4E69-8595-71330C7CD6EA}</ProjectGuid>
+    <ProjectGuid>{0D621DBC-28D7-4465-B713-A605494CA96B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ArkOfNoah___14._03</RootNamespace>
-    <AssemblyName>ArkOfNoah - 14.03</AssemblyName>
+    <RootNamespace>ExtraExerciseList</RootNamespace>
+    <AssemblyName>ExtraExerciseList</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,17 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllThePandas.cs" />
-    <Compile Include="Panda.cs" />
+    <Compile Include="Cursus.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TryoutPanda.cs" />
+    <Compile Include="TestProgram.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Remarks Vincent.txt" />
+    <None Include="ExtraEx.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

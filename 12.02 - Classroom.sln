@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkOfNoah - 14.03", "ArkOfN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.01 - TryoutSomeStuff - Tutorial", "14.01 - TryoutSomeStuff - Tutorial\14.01 - TryoutSomeStuff - Tutorial.csproj", "{6746519E-7B1D-4AA3-8637-3BB8B038AD8A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtraExerciseList", "ExtraExerciseList\ExtraExerciseList.csproj", "{0D621DBC-28D7-4465-B713-A605494CA96B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{6746519E-7B1D-4AA3-8637-3BB8B038AD8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6746519E-7B1D-4AA3-8637-3BB8B038AD8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6746519E-7B1D-4AA3-8637-3BB8B038AD8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D621DBC-28D7-4465-B713-A605494CA96B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D621DBC-28D7-4465-B713-A605494CA96B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D621DBC-28D7-4465-B713-A605494CA96B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D621DBC-28D7-4465-B713-A605494CA96B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
