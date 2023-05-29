@@ -1,0 +1,42 @@
+﻿20230529 - VVDW
+- Ik zie een class diagram. Mooi.
+- Een klasse Person
+  - 2 automatic properties, en 1 constructor.
+
+- Een klasse cursus
+  - 1 automatic property. Beschrijving van de cursus.
+  - 1 lijst (variabele, geen property)
+  - Een constructor voor de cursus
+    - Beschrijving en een lege lijst van personen. Zeer goed.
+  - Een Add (persoon aan de cursus toevoegen). Mooi.
+  - Twee indexers.
+    - 1 op het nummer. Mooi. (Get en Set)
+    - 1 op de naam. Zeer mooi. (Enkel de get)
+
+    - Een set maken heeft hier inderdaad niet te veel zin.
+      - Tenzij je iets wilt doen met de gevonden naam.
+      - Bijvoorbeeld, zoek op naam, en geef de gevonden naam een score.
+
+    - Je moet wel opletten hier.
+      - Als een voornaam, meerdere keren in je lijst staat, ga je enkel de eerste vinden.
+      - Dat is eigen aan het zoeken op voornaam, omdat je de naam beschouwd als een uniek gedeelte.
+      - Maar je return is echt spaghetticode.
+        - Je knalt gewoon uit je routine terwijl je in de lus nog bezig bent.
+        - Het kan eleganter, maar het is goed genoeg
+        - Cursus is toch een "black box" :-)
+
+- Zeer goed tot nu toe.
+  
+  - Je testroutine
+    - Je doet een paar vreemde dingen.
+    - Je toont de naam en voornaam van 2 verschillende personen in 1 lijn.
+      - csharp[3] en [0] (Lemmy vandewalle)
+
+    - Je toont de voornaam van iemand waar je al de voornaam van weet. Lindsay :-)
+      - Resultaat Lindsay. Het zou raar zijn moest het iets anders geweest zijn.
+
+    - Waarom test je niet eens op "csharp["prosper"]" ?
+      - Ik heb het toegevoegd aan je code en het crasht, omdat je de fout niet opvangt.
+      - Weet je ook waarom het fout gaat?
+      - Weet je hoe je de fout kunt opvangen?
+

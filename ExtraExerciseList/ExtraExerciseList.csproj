@@ -52,5 +52,8 @@
     <None Include="App.config" />
     <None Include="ExtraEx.cd" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Remarks Vincent.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
