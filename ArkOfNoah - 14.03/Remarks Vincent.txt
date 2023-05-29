@@ -15,4 +15,11 @@
 
   - You don't add the name of the panda, you add the panda itself to the list
 
+20230529 - VVDW
+  - Dit is stukken beter.
+  - Je variabele naam in onderstaand lijntje code is zeer slecht
+      public void Add(Panda strPandaName) // method to add name panda
+      - Je variabele naam zegt dat het een str (string) is, terwijl het data type een Panda is
 
+  - Zeer goede oefening.
+  - Ik denk dat je het "door" hebt :-)
