@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classroom", "Classroom\Classroom.csproj", "{E645E952-40C7-4259-9706-C2F40AC8073E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.02 - Classroom", "Classroom\12.02 - Classroom.csproj", "{E645E952-40C7-4259-9706-C2F40AC8073E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.01 Persons", "13.01 Persons\13.01 Persons.csproj", "{CDF075BF-6EB8-4500-A975-6A14EAF0C923}"
 EndProject
@@ -13,11 +13,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.03 - ClassDiagram", "13.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.04 - Animal", "13.04 - Animal\13.04 - Animal.csproj", "{2DE7DA58-CEE2-4BE1-831D-463DC3CD0F06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkOfNoah - 14.03", "ArkOfNoah - 14.03\ArkOfNoah - 14.03.csproj", "{8C866223-0396-4E69-8595-71330C7CD6EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.03 - ArkOfNoah", "ArkOfNoah - 14.03\14.03 - ArkOfNoah.csproj", "{8C866223-0396-4E69-8595-71330C7CD6EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.01 - TryoutSomeStuff - Tutorial", "14.01 - TryoutSomeStuff - Tutorial\14.01 - TryoutSomeStuff - Tutorial.csproj", "{6746519E-7B1D-4AA3-8637-3BB8B038AD8A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtraExerciseList", "ExtraExerciseList\ExtraExerciseList.csproj", "{0D621DBC-28D7-4465-B713-A605494CA96B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.01 - LoopingNumbers", "15.01 - LoopingNumbers\15.01 - LoopingNumbers.csproj", "{A0FAAB28-F4CF-4E7F-8DC2-E3882C9877C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ButtonColorChanger", "ButtonColorChanger\ButtonColorChanger.csproj", "{1DA4FC6A-F01C-4CE9-83E4-ACAA6AC8273C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeGameInForms", "TicTacToeGameInForms\TicTacToeGameInForms.csproj", "{ECECFCE2-25A8-469C-BBE1-3D32F34696EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,18 @@ Global
 		{0D621DBC-28D7-4465-B713-A605494CA96B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D621DBC-28D7-4465-B713-A605494CA96B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D621DBC-28D7-4465-B713-A605494CA96B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0FAAB28-F4CF-4E7F-8DC2-E3882C9877C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0FAAB28-F4CF-4E7F-8DC2-E3882C9877C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0FAAB28-F4CF-4E7F-8DC2-E3882C9877C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0FAAB28-F4CF-4E7F-8DC2-E3882C9877C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DA4FC6A-F01C-4CE9-83E4-ACAA6AC8273C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DA4FC6A-F01C-4CE9-83E4-ACAA6AC8273C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DA4FC6A-F01C-4CE9-83E4-ACAA6AC8273C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DA4FC6A-F01C-4CE9-83E4-ACAA6AC8273C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECECFCE2-25A8-469C-BBE1-3D32F34696EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECECFCE2-25A8-469C-BBE1-3D32F34696EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECECFCE2-25A8-469C-BBE1-3D32F34696EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECECFCE2-25A8-469C-BBE1-3D32F34696EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

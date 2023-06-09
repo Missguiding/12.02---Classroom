@@ -30,9 +30,9 @@ namespace ArkOfNoah___14._03
             }
         }
 
-        public void Add(Panda strPandaName) // method to add name panda
+        public void Add(Panda panda) // method to add name panda
         {
-            pandas.Add(strPandaName);
+            pandas.Add(panda);
         }
     }
 }
