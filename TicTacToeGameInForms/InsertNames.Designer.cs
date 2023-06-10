@@ -1,5 +1,5 @@
 ﻿
-namespace TicTacToeGameInForms
+namespace TicTacToeGameForms
 {
     partial class InsertNames
     {
@@ -63,6 +63,7 @@ namespace TicTacToeGameInForms
             this.txbPlayer1.Name = "txbPlayer1";
             this.txbPlayer1.Size = new System.Drawing.Size(273, 32);
             this.txbPlayer1.TabIndex = 2;
+            this.txbPlayer1.TextChanged += new System.EventHandler(this.txbPlayer1_TextChanged);
             // 
             // txbPlayer2
             // 
@@ -71,6 +72,8 @@ namespace TicTacToeGameInForms
             this.txbPlayer2.Name = "txbPlayer2";
             this.txbPlayer2.Size = new System.Drawing.Size(273, 32);
             this.txbPlayer2.TabIndex = 3;
+            this.txbPlayer2.TextChanged += new System.EventHandler(this.txbPlayer2_TextChanged);
+            this.txbPlayer2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPlayer2_KeyPress);
             // 
             // button1
             // 
@@ -81,6 +84,7 @@ namespace TicTacToeGameInForms
             this.button1.TabIndex = 4;
             this.button1.Text = "PLAY";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // InsertNames
             // 
@@ -93,10 +97,12 @@ namespace TicTacToeGameInForms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(523, 187);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(523, 187);
             this.Name = "InsertNames";
             this.ShowIcon = false;
-            this.Text = "InsertNames";
+            this.Text = "TicTacToe";
             this.Load += new System.EventHandler(this.InsertNames_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

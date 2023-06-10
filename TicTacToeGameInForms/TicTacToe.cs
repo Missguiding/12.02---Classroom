@@ -12,48 +12,62 @@ namespace TicTacToeGameForms
 {
     public partial class TicTacToe : Form
     {
-        bool blnTurn = true; // true = X turn; false = Y turn 
-        int intTurnCount = 0; // als er 9 zijn is het gelijk spel
+        bool blnTurn = true; // true = X turn; false = Y turn.
+        int intTurnCount = 0; 
+        static string strPlayer1;
+        static string strPlayer2;
+
         public TicTacToe()
         {
             InitializeComponent();
         }
 
+        
+        // method to set the players name in the game.
+        public static void SetPlayerNames(string strName1, string strName2) 
+        {
+            strPlayer1 = strName1;
+            strPlayer2 = strName2;
+        }
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("By Lindsey", "Tic Tac Toe About");
         }       
 
+        // when loading game, first open insert names form.
         private void TicTacToe_Load(object sender, EventArgs e)
         {
-            Form InsertNames = new Form();
-            InsertNames.ShowDialog();
+            InsertNames PlayerNames = new InsertNames();
+            PlayerNames.ShowDialog();
+            lblXWin.Text = strPlayer1;
+            lblOWin.Text = strPlayer2;
         }
 
-        private void button_click(object sender, EventArgs e) // alle knoppen hebben zelfde event(property: click - button_click)
-        {
-            // telkens we op een knop duwen, kijken wie zijn beurt het is, wisselen van spelen, knop onbruikbaarzetten en checken of er een winnaar is
+        // all 9 buttons have same event(property: click - button_click).
+        // every time we press a button, see who's turn it is, disable button, check if there is a winner.
+        private void button_click(object sender, EventArgs e) 
+        {           
+           
+            Button _button = (Button)sender; // casting object sender to button and store in _button.
 
-            Button _button = (Button)sender; //  object sender casten naar button en opslaan in _button
-
-            if (blnTurn) // als button wordt gedrukt willen we weten wie zijn beurt het is adhv blnTurn weten we of het X of Y beurt is
+            if (blnTurn) // if button is pressed  we want to know who's turn it is. using blnTurn we know if it is X or Y its turn.
             {
-                _button.Text = "X"; // speler X (true) speelt met X"
+                _button.Text = "X"; // speler X (true) plays with X".
             }
             else
             {
-                _button.Text = "O"; // speler Y (false) speelt met "O"
+                _button.Text = "O"; // speler Y (false) plays with "O".
             }
-            blnTurn = !blnTurn; // true is false en zal op de volgende speler worden gezet
+            blnTurn = !blnTurn; // true is false and wil change who's turn it is.
 
-            _button.Enabled = false; // enable(bool) _button om ervoor te zorgen dat gezette waarde niet kan wijzigen.
+            _button.Enabled = false; // enable(bool) _button to make sure that value cannot change..
 
-            intTurnCount++; // elke keer een button is geclicked, tel één bij
+            intTurnCount++; // every time button is clicked, ad one.
 
-            checkForWinner();
-        }
+            checkForWinner(); // use method to check if there is a winner.
+        } // end if else
 
-        private void checkForWinner() // methode om winnaar te checken
+        private void checkForWinner() // method to check if there is a winner.
         {
             bool blnThereIsAWinner = false;
 
@@ -105,27 +119,30 @@ namespace TicTacToeGameForms
 
                 if (blnTurn)
                 {
-                    _strWinner = "O";
-                    lblOWinCount.Text = (Convert.ToInt32(lblOWinCount.Text) + 1).ToString(); // lblOWinCount is string waarde
-                    // telt de keren O wint
+                    _strWinner = strPlayer2;
+                    // counts times player 2 wins
+                    lblOWinCount.Text = (Convert.ToInt32(lblOWinCount.Text) + 1).ToString(); // lblOWinCount is string value.
+                    ResetGame();
                 }
                 else
                 {
-                    _strWinner = "X";
-                    lblXWinCount.Text = (Int32.Parse(lblXWinCount.Text) + 1).ToString();  // telt de keren X wint
+                    _strWinner = strPlayer1;
+                    // count times player 1 wins
+                    lblXWinCount.Text = (Int32.Parse(lblXWinCount.Text) + 1).ToString();
+                    ResetGame();
                 }
-
 
                 MessageBox.Show(_strWinner + " Wins!", "Yay!");
-            } // end if
+            } // end if else
             else
             {
-                if (intTurnCount == 9) // als de teller op 9 staat is er geen winnaar
+                if (intTurnCount == 9) // when 9 time played, there is no winner.
                 {
-                    lblDrawCount.Text = (Convert.ToInt32(lblDrawCount.Text) + 1).ToString(); // telt de keren gelijk spel
+                    lblDrawCount.Text = (Convert.ToInt32(lblDrawCount.Text) + 1).ToString(); // counts times draw.
                     MessageBox.Show("Draw!", "Bummer!");
+                    ResetGame();
                 }
-            } // end else if
+            } // end if else
 
         } // end method checkForWinner
 
@@ -133,16 +150,16 @@ namespace TicTacToeGameForms
         {
             try
             {
-                foreach (Control input in Controls) // voor iedere button op formulier, maak onbruikbaar (1 keer X of O)
+                foreach (Control input in Controls) // for every button on formuler, make unusable (1 time X or O).
                 {
                     Button _button = (Button)input;
-                    _button.Enabled = false; //enable(bool) _button om ervoor te zorgen dat gezette waarde niet kan wijzigen.
+                    _button.Enabled = false; //enable(bool) _button to make sure that value cannot change.
                 }// end foreach
             } //end try
 
             catch
             {
-                // er moet niks opgevangen worden
+                // nothing to catch
             }
 
         } // end method disableButtons
@@ -152,32 +169,33 @@ namespace TicTacToeGameForms
 
         }
 
-        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ResetGame()
         {
-            blnTurn = true;
-            intTurnCount = 0;
-
-            foreach (Control input in Controls) // voor iedere button op formulier, maak onbruikbaar (1 keer X of O)
+            foreach (Control input in Controls) // for every button on formuler, make unusable (1 time X or O).
             {
                 try
                 {
                     Button _button = (Button)input;
-                    _button.Enabled = true; //enable(bool) _button om ervoor te zorgen dat gezette waarde niet kan wijzigen.
+                    _button.Enabled = true; //enable(bool) _button to make sure that value cannot change.
                     _button.Text = "";
                 }
                 catch
                 {
-                    // er moet niks opgevangen worden
+                    // nothing to catch
                 }
-            } // end foreach
+            } // end fore
 
+        }
+        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResetGame(); // use method to reset the game            
         }
 
         private void button_enter(object sender, EventArgs e)
         {
-            Button _button = (Button)sender; //  object sender casten naar button en opslaan in _button
+            Button _button = (Button)sender; //  cast object sender to button and store in _button.
 
-            if (_button.Enabled) // toets ingeschakeld
+            if (_button.Enabled) // empower button
             {
                 if (blnTurn)
                 {
@@ -187,16 +205,16 @@ namespace TicTacToeGameForms
                 {
                     _button.Text = "O";
                 }
-            } // end if
+            } // end if else
         }
 
         private void button_leave(object sender, EventArgs e)
         {
-            Button _button = (Button)sender; //  object sender casten naar button en opslaan in _button
+            Button _button = (Button)sender; // cast object sender to button and store in _button.
 
-            if (_button.Enabled) // toets ingeschakeld
+            if (_button.Enabled) // empower button.
             {
-                _button.Text = ""; // zet tekst op blanco
+                _button.Text = ""; // put text on blanc.
             } // end if
 
         }
@@ -206,11 +224,24 @@ namespace TicTacToeGameForms
             Application.Exit();
         }
 
+        // reset, set on "0" the score counts
         private void resetWinCountsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             lblXWinCount.Text = "0";
             lblOWinCount.Text = "0";
             lblDrawCount.Text = "0";
         }
+
+        private void lblXWin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblOWin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

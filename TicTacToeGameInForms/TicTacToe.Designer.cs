@@ -51,6 +51,7 @@ namespace TicTacToeGameForms
             this.lblXWinCount = new System.Windows.Forms.Label();
             this.lblOWinCount = new System.Windows.Forms.Label();
             this.lblDrawCount = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,21 +80,21 @@ namespace TicTacToeGameForms
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.newGameToolStripMenuItem.Text = "New Game";
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
             // resetWinCountsToolStripMenuItem
             // 
             this.resetWinCountsToolStripMenuItem.Name = "resetWinCountsToolStripMenuItem";
-            this.resetWinCountsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.resetWinCountsToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.resetWinCountsToolStripMenuItem.Text = "Reset Win Counts";
             this.resetWinCountsToolStripMenuItem.Click += new System.EventHandler(this.resetWinCountsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click_1);
             // 
@@ -225,30 +226,40 @@ namespace TicTacToeGameForms
             this.lblXWin.AutoSize = true;
             this.lblXWin.Font = new System.Drawing.Font("Verdana", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.lblXWin.Location = new System.Drawing.Point(12, 346);
+            this.lblXWin.MaximumSize = new System.Drawing.Size(107, 18);
+            this.lblXWin.MinimumSize = new System.Drawing.Size(107, 18);
             this.lblXWin.Name = "lblXWin";
             this.lblXWin.Size = new System.Drawing.Size(107, 18);
             this.lblXWin.TabIndex = 10;
             this.lblXWin.Text = "X Win Count";
+            this.lblXWin.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblXWin.Click += new System.EventHandler(this.lblXWin_Click);
             // 
             // lblDraw
             // 
             this.lblDraw.AutoSize = true;
             this.lblDraw.Font = new System.Drawing.Font("Verdana", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.lblDraw.Location = new System.Drawing.Point(136, 346);
+            this.lblDraw.MaximumSize = new System.Drawing.Size(104, 18);
+            this.lblDraw.MinimumSize = new System.Drawing.Size(104, 18);
             this.lblDraw.Name = "lblDraw";
             this.lblDraw.Size = new System.Drawing.Size(104, 18);
             this.lblDraw.TabIndex = 11;
             this.lblDraw.Text = "Draw Count";
+            this.lblDraw.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblOWin
             // 
             this.lblOWin.AutoSize = true;
             this.lblOWin.Font = new System.Drawing.Font("Verdana", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.lblOWin.Location = new System.Drawing.Point(258, 346);
+            this.lblOWin.MaximumSize = new System.Drawing.Size(109, 18);
+            this.lblOWin.MinimumSize = new System.Drawing.Size(109, 18);
             this.lblOWin.Name = "lblOWin";
             this.lblOWin.Size = new System.Drawing.Size(109, 18);
             this.lblOWin.TabIndex = 12;
             this.lblOWin.Text = "O Win Count";
+            this.lblOWin.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblXWinCount
             // 
@@ -277,11 +288,21 @@ namespace TicTacToeGameForms
             this.lblDrawCount.TabIndex = 15;
             this.lblDrawCount.Text = "0";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(41, 80);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(8, 8);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // TicTacToe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(379, 439);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblDrawCount);
             this.Controls.Add(this.lblOWinCount);
             this.Controls.Add(this.lblXWinCount);
@@ -337,6 +358,7 @@ namespace TicTacToeGameForms
         private System.Windows.Forms.Label lblDrawCount;
         private System.Windows.Forms.ToolStripMenuItem resetWinCountsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
 

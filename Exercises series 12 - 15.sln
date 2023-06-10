@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.01 - LoopingNumbers", "1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ButtonColorChanger", "ButtonColorChanger\ButtonColorChanger.csproj", "{1DA4FC6A-F01C-4CE9-83E4-ACAA6AC8273C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeGameInForms", "TicTacToeGameInForms\TicTacToeGameInForms.csproj", "{ECECFCE2-25A8-469C-BBE1-3D32F34696EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicTacToeGameForms", "TicTacToeGameInForms\TicTacToeGameForms.csproj", "{ECECFCE2-25A8-469C-BBE1-3D32F34696EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
