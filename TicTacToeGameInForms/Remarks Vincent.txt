@@ -1,4 +1,5 @@
 ﻿20230612 - VVDW
+20230615 - VVDW
 - Ik speel 1 spelletje.
   - He, tof, dat je de X en de O zelf toont, voordat je erop klikt.
   * Dank je, credits voor Chris Merritt ...
@@ -23,9 +24,15 @@
   InsertNames.
   - Ik ga nu een beetje advocaat van de duivel spelen.
   - Je hebt veel events die niets doen. Haal die weg.
-  * Effectief delete?
+  * Effectief delete? 
+  -- VVDW Yup :-)
+
   - Wat gebeurt er als ik de namen niet invul en ik druk op de drukknop druk.
   * Dan krijg je nu Player 1 & Player 2 ;-)
+  -- VVDW Zeer goed :-)
+  -- VVDW Voorstel voor als je later tijd hebt. Maak van de spelernamen een property in plaats van een variable.
+  -- Dan kun je de "set" of "get" wijzigen bij "geen naam meegegeven"
+
   - Oh, nee, de elementen noemen label1, label2 en button1
   * Whoeps, deze over het hoofd gezien :-(
     - Geef alles een goede naam !!!!
@@ -36,6 +43,8 @@
   - Je resetgame
     - Hier vergeet je het aantal drukknoppen op 0 te zetten.
     * Ik denk dat het nu ok is.
+    -- VVDW - Inderdaad
+
     - Je wilt als het aantal drukknoppen op 9 staat, dat je een gelijk spel hebt.
     - Je doet dit maar 1 keer in je ganse game.
       
@@ -46,6 +55,10 @@
       - Dit is een lastige oefening.
       * Daar heb ik niet veel aandacht aan besteed omdat ik dit heb gemaakt om werking forms te oefenen, dus voor deze vind ik het ok.
       * Ik zal het misschien nog herwerken in de vakantie. Als ik door al mijn andere oefeningen ben.
+      -- VVDW - Goede beslissing
 
   - Hier mag je best trots op zijn.
   * Dank je, ik vind dit leuk om te maken.
+  -- VVDW - Ik heb er zo nog veel liggen :-)
+  -- VVDW - Een variatie op dit is vier op een rij. Dit is een raster van 7 horizontaal op 6 vertikaal
+  -- VVDW - En de steentjes vallen natuurlijk naar beneden als je ergens klikt (als een dode vogel :-))
