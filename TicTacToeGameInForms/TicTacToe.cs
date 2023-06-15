@@ -13,44 +13,53 @@ namespace TicTacToeGameForms
     public partial class TicTacToe : Form
     {
         bool blnTurn = true; // true = X turn; false = Y turn.
-        int intTurnCount = 0; 
-        static string strPlayer1;
-        static string strPlayer2;
+        int intTurnCount = 0;
+        static string strPlayer1; // variable for name player 1
+        static string strPlayer2; // variable for name player 2
 
         public TicTacToe()
         {
             InitializeComponent();
         }
 
-        
         // method to set the players name in the game.
-        public static void SetPlayerNames(string strName1, string strName2) 
+        public static void SetPlayerNames(string strName1, string strName2)
         {
             strPlayer1 = strName1;
             strPlayer2 = strName2;
+
+            // if user input is zero
+            if (strPlayer1 == "")
+            {
+                strPlayer1 = "Player 1";
+            }
+            if (strPlayer2 == "")
+            {
+                strPlayer2 = "Player 2";
+            }
         }
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("By Lindsey", "Tic Tac Toe About");
-        }       
+        }
 
         // when loading game, first open insert names form.
         private void TicTacToe_Load(object sender, EventArgs e)
         {
             InsertNames PlayerNames = new InsertNames();
-            PlayerNames.ShowDialog();
+            PlayerNames.ShowDialog(); // show other form as dialog
             lblXWin.Text = strPlayer1;
             lblOWin.Text = strPlayer2;
         }
 
         // all 9 buttons have same event(property: click - button_click).
         // every time we press a button, see who's turn it is, disable button, check if there is a winner.
-        private void button_click(object sender, EventArgs e) 
-        {           
-           
+        private void Button_click(object sender, EventArgs e)
+        {
+
             Button _button = (Button)sender; // casting object sender to button and store in _button.
 
-            if (blnTurn) // if button is pressed  we want to know who's turn it is. using blnTurn we know if it is X or Y its turn.
+            if (blnTurn) // if button is pressed, we want to know who's turn it is. Using blnTurn we know if it is X or Y its turn.
             {
                 _button.Text = "X"; // speler X (true) plays with X".
             }
@@ -64,10 +73,10 @@ namespace TicTacToeGameForms
 
             intTurnCount++; // every time button is clicked, ad one.
 
-            checkForWinner(); // use method to check if there is a winner.
+            CheckForWinner(); // use method to check if there is a winner.
         } // end if else
 
-        private void checkForWinner() // method to check if there is a winner.
+        private void CheckForWinner() // method to check if there is a winner.
         {
             bool blnThereIsAWinner = false;
 
@@ -113,9 +122,8 @@ namespace TicTacToeGameForms
 
             if (blnThereIsAWinner)
             {
-                disableButtons();
-
-                string _strWinner = "";
+                string _strWinner;
+                DisableButtons();
 
                 if (blnTurn)
                 {
@@ -146,7 +154,7 @@ namespace TicTacToeGameForms
 
         } // end method checkForWinner
 
-        private void disableButtons()
+        private void DisableButtons()
         {
             try
             {
@@ -164,7 +172,7 @@ namespace TicTacToeGameForms
 
         } // end method disableButtons
 
-        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        private void FileToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
@@ -178,6 +186,7 @@ namespace TicTacToeGameForms
                     Button _button = (Button)input;
                     _button.Enabled = true; //enable(bool) _button to make sure that value cannot change.
                     _button.Text = "";
+                    intTurnCount = 0;
                 }
                 catch
                 {
@@ -186,12 +195,12 @@ namespace TicTacToeGameForms
             } // end fore
 
         }
-        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
+        private void NewGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ResetGame(); // use method to reset the game            
         }
 
-        private void button_enter(object sender, EventArgs e)
+        private void Button_enter(object sender, EventArgs e)
         {
             Button _button = (Button)sender; //  cast object sender to button and store in _button.
 
@@ -208,7 +217,7 @@ namespace TicTacToeGameForms
             } // end if else
         }
 
-        private void button_leave(object sender, EventArgs e)
+        private void Button_leave(object sender, EventArgs e)
         {
             Button _button = (Button)sender; // cast object sender to button and store in _button.
 
@@ -219,29 +228,27 @@ namespace TicTacToeGameForms
 
         }
 
-        private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void ExitToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
         // reset, set on "0" the score counts
-        private void resetWinCountsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ResetWinCountsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             lblXWinCount.Text = "0";
             lblOWinCount.Text = "0";
             lblDrawCount.Text = "0";
         }
 
-        private void lblXWin_Click(object sender, EventArgs e)
+        private void LblXWin_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lblOWin_Click(object sender, EventArgs e)
+        private void LblOWin_Click(object sender, EventArgs e)
         {
 
         }
-
-       
     }
 }

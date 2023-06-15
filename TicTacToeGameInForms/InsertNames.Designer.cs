@@ -29,32 +29,32 @@ namespace TicTacToeGameForms
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblPlayer1 = new System.Windows.Forms.Label();
+            this.lblPlayer2 = new System.Windows.Forms.Label();
             this.txbPlayer1 = new System.Windows.Forms.TextBox();
             this.txbPlayer2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPlayGame = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblPlayer1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Player One Name:";
+            this.lblPlayer1.AutoSize = true;
+            this.lblPlayer1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPlayer1.Location = new System.Drawing.Point(12, 9);
+            this.lblPlayer1.Name = "lblPlayer1";
+            this.lblPlayer1.Size = new System.Drawing.Size(197, 25);
+            this.lblPlayer1.TabIndex = 0;
+            this.lblPlayer1.Text = "Player One Name:";            
             // 
-            // label2
+            // lblPlayer2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(12, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Player Two Name:";
+            this.lblPlayer2.AutoSize = true;
+            this.lblPlayer2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPlayer2.Location = new System.Drawing.Point(12, 47);
+            this.lblPlayer2.Name = "lblPlayer2";
+            this.lblPlayer2.Size = new System.Drawing.Size(194, 25);
+            this.lblPlayer2.TabIndex = 1;
+            this.lblPlayer2.Text = "Player Two Name:";
             // 
             // txbPlayer1
             // 
@@ -63,7 +63,7 @@ namespace TicTacToeGameForms
             this.txbPlayer1.Name = "txbPlayer1";
             this.txbPlayer1.Size = new System.Drawing.Size(273, 32);
             this.txbPlayer1.TabIndex = 2;
-            this.txbPlayer1.TextChanged += new System.EventHandler(this.txbPlayer1_TextChanged);
+            this.txbPlayer1.TextChanged += new System.EventHandler(this.TxbPlayer1_TextChanged);
             // 
             // txbPlayer2
             // 
@@ -72,30 +72,30 @@ namespace TicTacToeGameForms
             this.txbPlayer2.Name = "txbPlayer2";
             this.txbPlayer2.Size = new System.Drawing.Size(273, 32);
             this.txbPlayer2.TabIndex = 3;
-            this.txbPlayer2.TextChanged += new System.EventHandler(this.txbPlayer2_TextChanged);
-            this.txbPlayer2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPlayer2_KeyPress);
+            this.txbPlayer2.TextChanged += new System.EventHandler(this.TxbPlayer2_TextChanged);
+            this.txbPlayer2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxbPlayer2_KeyPress);
             // 
-            // button1
+            // btnPlayGame
             // 
-            this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(391, 82);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 38);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "PLAY";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnPlayGame.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPlayGame.Location = new System.Drawing.Point(391, 82);
+            this.btnPlayGame.Name = "btnPlayGame";
+            this.btnPlayGame.Size = new System.Drawing.Size(94, 38);
+            this.btnPlayGame.TabIndex = 4;
+            this.btnPlayGame.Text = "PLAY";
+            this.btnPlayGame.UseVisualStyleBackColor = true;
+            this.btnPlayGame.Click += new System.EventHandler(this.BtnPlayGame_Click);
             // 
             // InsertNames
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(505, 140);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnPlayGame);
             this.Controls.Add(this.txbPlayer2);
             this.Controls.Add(this.txbPlayer1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblPlayer2);
+            this.Controls.Add(this.lblPlayer1);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(523, 187);
             this.MinimizeBox = false;
@@ -111,10 +111,10 @@ namespace TicTacToeGameForms
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblPlayer1;
+        private System.Windows.Forms.Label lblPlayer2;
         private System.Windows.Forms.TextBox txbPlayer1;
         private System.Windows.Forms.TextBox txbPlayer2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPlayGame;
     }
 }

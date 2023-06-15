@@ -82,21 +82,21 @@ namespace TicTacToeGameForms
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
             this.newGameToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.newGameToolStripMenuItem.Text = "New Game";
-            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
+            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.NewGameToolStripMenuItem_Click);
             // 
             // resetWinCountsToolStripMenuItem
             // 
             this.resetWinCountsToolStripMenuItem.Name = "resetWinCountsToolStripMenuItem";
             this.resetWinCountsToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.resetWinCountsToolStripMenuItem.Text = "Reset Win Counts";
-            this.resetWinCountsToolStripMenuItem.Click += new System.EventHandler(this.resetWinCountsToolStripMenuItem_Click);
+            this.resetWinCountsToolStripMenuItem.Click += new System.EventHandler(this.ResetWinCountsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
             this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click_1);
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click_1);
             // 
             // helpToolStripMenuItem
             // 
@@ -111,7 +111,7 @@ namespace TicTacToeGameForms
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // A1
             // 
@@ -121,9 +121,9 @@ namespace TicTacToeGameForms
             this.A1.Size = new System.Drawing.Size(75, 75);
             this.A1.TabIndex = 1;
             this.A1.UseVisualStyleBackColor = true;
-            this.A1.Click += new System.EventHandler(this.button_click);
-            this.A1.MouseEnter += new System.EventHandler(this.button_enter);
-            this.A1.MouseLeave += new System.EventHandler(this.button_leave);
+            this.A1.Click += new System.EventHandler(this.Button_click);
+            this.A1.MouseEnter += new System.EventHandler(this.Button_enter);
+            this.A1.MouseLeave += new System.EventHandler(this.Button_leave);
             // 
             // A2
             // 
@@ -133,9 +133,9 @@ namespace TicTacToeGameForms
             this.A2.Size = new System.Drawing.Size(75, 75);
             this.A2.TabIndex = 2;
             this.A2.UseVisualStyleBackColor = true;
-            this.A2.Click += new System.EventHandler(this.button_click);
-            this.A2.MouseEnter += new System.EventHandler(this.button_enter);
-            this.A2.MouseLeave += new System.EventHandler(this.button_leave);
+            this.A2.Click += new System.EventHandler(this.Button_click);
+            this.A2.MouseEnter += new System.EventHandler(this.Button_enter);
+            this.A2.MouseLeave += new System.EventHandler(this.Button_leave);
             // 
             // A3
             // 
@@ -145,9 +145,9 @@ namespace TicTacToeGameForms
             this.A3.Size = new System.Drawing.Size(75, 75);
             this.A3.TabIndex = 3;
             this.A3.UseVisualStyleBackColor = true;
-            this.A3.Click += new System.EventHandler(this.button_click);
-            this.A3.MouseEnter += new System.EventHandler(this.button_enter);
-            this.A3.MouseLeave += new System.EventHandler(this.button_leave);
+            this.A3.Click += new System.EventHandler(this.Button_click);
+            this.A3.MouseEnter += new System.EventHandler(this.Button_enter);
+            this.A3.MouseLeave += new System.EventHandler(this.Button_leave);
             // 
             // B1
             // 
@@ -157,9 +157,9 @@ namespace TicTacToeGameForms
             this.B1.Size = new System.Drawing.Size(75, 75);
             this.B1.TabIndex = 4;
             this.B1.UseVisualStyleBackColor = true;
-            this.B1.Click += new System.EventHandler(this.button_click);
-            this.B1.MouseEnter += new System.EventHandler(this.button_enter);
-            this.B1.MouseLeave += new System.EventHandler(this.button_leave);
+            this.B1.Click += new System.EventHandler(this.Button_click);
+            this.B1.MouseEnter += new System.EventHandler(this.Button_enter);
+            this.B1.MouseLeave += new System.EventHandler(this.Button_leave);
             // 
             // B2
             // 
@@ -169,9 +169,9 @@ namespace TicTacToeGameForms
             this.B2.Size = new System.Drawing.Size(75, 75);
             this.B2.TabIndex = 5;
             this.B2.UseVisualStyleBackColor = true;
-            this.B2.Click += new System.EventHandler(this.button_click);
-            this.B2.MouseEnter += new System.EventHandler(this.button_enter);
-            this.B2.MouseLeave += new System.EventHandler(this.button_leave);
+            this.B2.Click += new System.EventHandler(this.Button_click);
+            this.B2.MouseEnter += new System.EventHandler(this.Button_enter);
+            this.B2.MouseLeave += new System.EventHandler(this.Button_leave);
             // 
             // B3
             // 
@@ -181,9 +181,9 @@ namespace TicTacToeGameForms
             this.B3.Size = new System.Drawing.Size(75, 75);
             this.B3.TabIndex = 6;
             this.B3.UseVisualStyleBackColor = true;
-            this.B3.Click += new System.EventHandler(this.button_click);
-            this.B3.MouseEnter += new System.EventHandler(this.button_enter);
-            this.B3.MouseLeave += new System.EventHandler(this.button_leave);
+            this.B3.Click += new System.EventHandler(this.Button_click);
+            this.B3.MouseEnter += new System.EventHandler(this.Button_enter);
+            this.B3.MouseLeave += new System.EventHandler(this.Button_leave);
             // 
             // C1
             // 
@@ -193,9 +193,9 @@ namespace TicTacToeGameForms
             this.C1.Size = new System.Drawing.Size(75, 75);
             this.C1.TabIndex = 7;
             this.C1.UseVisualStyleBackColor = true;
-            this.C1.Click += new System.EventHandler(this.button_click);
-            this.C1.MouseEnter += new System.EventHandler(this.button_enter);
-            this.C1.MouseLeave += new System.EventHandler(this.button_leave);
+            this.C1.Click += new System.EventHandler(this.Button_click);
+            this.C1.MouseEnter += new System.EventHandler(this.Button_enter);
+            this.C1.MouseLeave += new System.EventHandler(this.Button_leave);
             // 
             // C2
             // 
@@ -205,9 +205,9 @@ namespace TicTacToeGameForms
             this.C2.Size = new System.Drawing.Size(75, 75);
             this.C2.TabIndex = 8;
             this.C2.UseVisualStyleBackColor = true;
-            this.C2.Click += new System.EventHandler(this.button_click);
-            this.C2.MouseEnter += new System.EventHandler(this.button_enter);
-            this.C2.MouseLeave += new System.EventHandler(this.button_leave);
+            this.C2.Click += new System.EventHandler(this.Button_click);
+            this.C2.MouseEnter += new System.EventHandler(this.Button_enter);
+            this.C2.MouseLeave += new System.EventHandler(this.Button_leave);
             // 
             // C3
             // 
@@ -217,9 +217,9 @@ namespace TicTacToeGameForms
             this.C3.Size = new System.Drawing.Size(75, 75);
             this.C3.TabIndex = 9;
             this.C3.UseVisualStyleBackColor = true;
-            this.C3.Click += new System.EventHandler(this.button_click);
-            this.C3.MouseEnter += new System.EventHandler(this.button_enter);
-            this.C3.MouseLeave += new System.EventHandler(this.button_leave);
+            this.C3.Click += new System.EventHandler(this.Button_click);
+            this.C3.MouseEnter += new System.EventHandler(this.Button_enter);
+            this.C3.MouseLeave += new System.EventHandler(this.Button_leave);
             // 
             // lblXWin
             // 
@@ -233,7 +233,7 @@ namespace TicTacToeGameForms
             this.lblXWin.TabIndex = 10;
             this.lblXWin.Text = "X Win Count";
             this.lblXWin.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblXWin.Click += new System.EventHandler(this.lblXWin_Click);
+            this.lblXWin.Click += new System.EventHandler(this.LblXWin_Click);
             // 
             // lblDraw
             // 
@@ -264,7 +264,7 @@ namespace TicTacToeGameForms
             // lblXWinCount
             // 
             this.lblXWinCount.AutoSize = true;
-            this.lblXWinCount.Location = new System.Drawing.Point(54, 368);
+            this.lblXWinCount.Location = new System.Drawing.Point(54, 377);
             this.lblXWinCount.Name = "lblXWinCount";
             this.lblXWinCount.Size = new System.Drawing.Size(17, 20);
             this.lblXWinCount.TabIndex = 13;
@@ -273,7 +273,7 @@ namespace TicTacToeGameForms
             // lblOWinCount
             // 
             this.lblOWinCount.AutoSize = true;
-            this.lblOWinCount.Location = new System.Drawing.Point(304, 364);
+            this.lblOWinCount.Location = new System.Drawing.Point(302, 377);
             this.lblOWinCount.Name = "lblOWinCount";
             this.lblOWinCount.Size = new System.Drawing.Size(17, 20);
             this.lblOWinCount.TabIndex = 14;
@@ -282,7 +282,7 @@ namespace TicTacToeGameForms
             // lblDrawCount
             // 
             this.lblDrawCount.AutoSize = true;
-            this.lblDrawCount.Location = new System.Drawing.Point(181, 364);
+            this.lblDrawCount.Location = new System.Drawing.Point(179, 377);
             this.lblDrawCount.Name = "lblDrawCount";
             this.lblDrawCount.Size = new System.Drawing.Size(17, 20);
             this.lblDrawCount.TabIndex = 15;
