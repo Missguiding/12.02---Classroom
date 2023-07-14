@@ -28,9 +28,8 @@ namespace The_Grid___ex_10._01
             public int AskPosition(int intMaxNumber)
             {
                 bool blnCorrectInput = true;
-                string strAskNumber = "Enter a number between " + 1 + " and " + intMaxNumber;
+                string strAskNumber = "Enter a number between " + 0 + " and " + (intMaxNumber -1);
                 string strErrorMessage = "You dit not give a correct number, please try again";
-
 
                 while (blnCorrectInput)
                 {
@@ -39,11 +38,14 @@ namespace The_Grid___ex_10._01
                     {
                         _intUsersChoise = Convert.ToInt32(Console.ReadLine());
 
-                        if (_intUsersChoise > 1 && _intUsersChoise < intMaxNumber)
+                        if (_intUsersChoise >=0  && _intUsersChoise < intMaxNumber)
                         {
                             blnCorrectInput = false;
                         }
-                        Message(strErrorMessage);
+                        else
+                        {
+                            Message(strErrorMessage);
+                        }
                     }
                     catch
                     {

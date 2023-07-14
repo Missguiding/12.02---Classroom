@@ -36,14 +36,19 @@ namespace The_Grid___ex_10._01
 
                 try
                 {
+                    // input must be a number, no text or decimal
                     _intUsersInput = Convert.ToInt32(Console.ReadLine());
 
+                    // check the input
                     if (_intUsersInput >= intMinValue && _intUsersInput <= intMaxValue)
                     {
                         blnCorrectInput = false;
                     }
-
-                    Message(strErrorMessage);
+                    // if the input is not correct, show your message
+                    else
+                    {
+                        Message(strErrorMessage);
+                    }
                 }
                 catch
                 {
