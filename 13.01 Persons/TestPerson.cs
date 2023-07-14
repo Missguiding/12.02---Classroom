@@ -40,8 +40,8 @@ namespace Persons
                 peter.ZipCode = "BE 8650";
                 peter.Street = "Melkweg";
                 peter.City = "Houthulst";
-                Console.WriteLine(peter.ShowInformation());
 
+                Console.WriteLine(peter.ShowInformation());
                 Console.ReadLine();
             }
         }
