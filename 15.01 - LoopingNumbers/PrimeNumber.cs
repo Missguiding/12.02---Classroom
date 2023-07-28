@@ -8,41 +8,54 @@ namespace _15._01___LoopingNumbers
 {
     public class PrimeNumber
     {
-        private readonly List<ushort> _lstPrimeNumbers;
+        private readonly List<ushort> lstPrimeNumbers;
+
 
         public PrimeNumber(ushort ushtMaxNumber)
         {
-             //= ushtMaxNumber;
-            _lstPrimeNumbers = new List<ushort>();
-        }
-        static bool[] PrimeArray(ulong Input) // method array bool + one parameter
-        {
-            bool[] blnTrueArray = new bool[Input + 1]; // make bool array - length is asked number - make the size + 1
+            lstPrimeNumbers = new List<ushort>();
 
-            for (int aCounter = 0; aCounter < blnTrueArray.Length; aCounter++) // loop 
+            for (ushort counter = 2; counter <= ushtMaxNumber; counter++)
             {
-                blnTrueArray[aCounter] = true; // make all values true
-            }
-
-            return blnTrueArray; // return filled array
-        }
-        static void FindPrimeNumbers(bool[] blntrueArray) // method array bool + one parameter
-        {
-            blntrueArray[0] = false; // make element 0 false
-            blntrueArray[1] = false; // make element 1 false
-
-            for (int aCounter = 0; aCounter < blntrueArray.Length; aCounter++)// repeat for next element
-            {
-                if (blntrueArray[aCounter]) // find next element that is true with a loop
-
+                if (IsItAPrimeNumber(counter))
                 {
-                    //all numbers that are a multiplication of 2 or the current counter, become false (only when they are true)
-                    for (int secondCounter = aCounter + aCounter; secondCounter < blntrueArray.Length; secondCounter += aCounter)
-                    {
-                        blntrueArray[secondCounter] = false;
-                    }
+                   ushort  ushtPrimeNumber = counter;
+                    lstPrimeNumbers.Add(ushtPrimeNumber);
                 }
             }
+        }
+        
+        
+        static bool IsItAPrimeNumber(int intNumberToCheck) // method to check if number is prime number
+
+        {
+            if(intNumberToCheck <2)
+            {
+                return false;
+            }
+            if (intNumberToCheck == 2)
+            {
+                return true;
+            }
+            if(intNumberToCheck %2 == 0)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+
+
+      
+        public override string ToString()
+        {
+            Console.WriteLine("List with prime numbers:");
+            foreach (ushort number in lstPrimeNumbers)
+            {
+                Console.WriteLine(number.ToString());
+            }
+            return lstPrimeNumbers.ToString();
         }
     }
 }

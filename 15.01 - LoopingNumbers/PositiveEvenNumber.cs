@@ -8,14 +8,14 @@ namespace _15._01___LoopingNumbers
 {
     public class PositiveEvenNumber
     {
-        private ushort _ushtPosEvenNumber = 4;
-        private readonly List<ushort> lstPositiveEvenNumbers;
+        private ushort _ushtPosEvenNumber = 4; // field 
+        private readonly List<ushort> lstPositiveEvenNumbers; // field
 
-        public PositiveEvenNumber(ushort ushtNumber)
+        public PositiveEvenNumber(ushort ushtNumber) // constructor with parameter
         {
-            lstPositiveEvenNumbers = new List<ushort>();
-
-            for (int counter = 0; counter < ushtNumber; counter++)
+            lstPositiveEvenNumbers = new List<ushort>(); // create a 
+            
+            for (int counter = 0; counter < ushtNumber/2; counter++)
             {
                 AddPositiveNumber();
             }
@@ -29,6 +29,7 @@ namespace _15._01___LoopingNumbers
 
         public override string ToString()
         {
+            Console.WriteLine("List with positive even numbers:");
             foreach (ushort number in lstPositiveEvenNumbers)
             {
                 Console.WriteLine(number.ToString());

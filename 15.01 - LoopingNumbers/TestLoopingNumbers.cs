@@ -7,12 +7,15 @@ namespace _15._01___LoopingNumbers
     {
         static void Main()
         {
-            PositiveEvenNumber evenlist = new PositiveEvenNumber(20);            
+            PositiveEvenNumber evenlist = new PositiveEvenNumber(55);            
             evenlist.ToString();
+            
 
-            PrimeNumber primelist = new PrimeNumber(20);
+            PrimeNumber primelist = new PrimeNumber(55);
+            primelist.ToString();
+            
 
-            Console.WriteLine(primelist);
+            Console.WriteLine();
            
             Console.ReadLine();
         }
