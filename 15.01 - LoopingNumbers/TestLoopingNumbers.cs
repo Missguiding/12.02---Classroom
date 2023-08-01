@@ -2,22 +2,24 @@
 
 namespace _15._01___LoopingNumbers
 {
-        
-    class TestLoopingNumbers
+
+  class TestLoopingNumbers
+  {
+    static void Main()
     {
-        static void Main()
-        {
-            PositiveEvenNumber evenlist = new PositiveEvenNumber(55);            
-            evenlist.ToString();
-            
+      PositiveEvenNumber evenlist = new PositiveEvenNumber(55);
+      // evenlist.ToString();
 
-            PrimeNumber primelist = new PrimeNumber(55);
-            primelist.ToString();
-            
+      // VVDW - Alternative
+      Console.WriteLine(evenlist.ToString());
 
-            Console.WriteLine();
-           
-            Console.ReadLine();
-        }
+      PrimeNumber primelist = new PrimeNumber(55);
+      primelist.ToString();
+
+
+      Console.WriteLine();
+
+      Console.ReadLine();
     }
+  }
 }

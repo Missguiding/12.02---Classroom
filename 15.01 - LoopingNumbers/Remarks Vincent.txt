@@ -1,0 +1,49 @@
+﻿20230801 - VVDW
+- Als ik je routine laat runnen, dan krijg ik een lijst van even nummers van 4 tot 56
+	- Deze lijst is correct.
+	
+- Als ik je routine laat runnen, dna krijg ik ook een lijst van de priemgetallen.
+  - Deze lijst is niet correct.
+	- Cijfer 9 staat erin, en dat is geen priemgetal.
+
+Ik kijk eens onder de motorkap.
+- Duidelijk wat je waar doet in je code, moet zelfs de code niet zien.
+  - Je hebt een klasse "PositiveEvenNumber", "PrimeNumber", allemaal duidelijke namen. (Zeer goed)
+
+PositiveEvenNumber
+- De variabele _ushtPsEvenNumber.
+  Door de _ denk ik dat dit een variabele is die enkel gebruikt wordt in een property. Dat is niet het geval. (niet erg, een naam is een naam)
+- Constructor, correct.
+- AddPositiveNumber, mooi.
+- Zorg wel dat het commentaar nuttig is. Nu zie ik "field", "constructor with parameter", en "Create a".
+  - Zet ook eens in commentaar wat je precies doet :-)
+
+- De functie ToString()
+  - Dit toont dingen op de console, mooi.
+  - Maar dit returned ook de lijst als tekst.
+    - En daar doe je niets mee.
+  - Ik heb een alternatief in je code gezet. De initialen VVDW staan erbij.
+    - Zie ToString() in PositiveEvenNumber.
+    - Jouw code staat in commentaar.
+    - Dit genereert een tekst, en de tekst wordt teruggegeven.
+    - In je TestLoopingNumbers, doe je dan een Console.WriteLine() van het resultaat.
+
+  - Snap je wat ik hier doe?
+
+  PrimeNumber
+  - Dit heeft aandacht nodig, want het klopt niet
+  - Je oplossingsmethode is gewoon fout, omdat er een denkfout in zit.
+  - Het probleem zit in de "IsItAPrimeNumber"
+    - De correcte oplossing is hier in het Nederlands uitgeschreven.
+      - 2 is een priemgetal (dat zet je in de lijst van de priemgetallen)
+      - 3, probeer je te delen door de volledige lijst van de priemgetallen. (dat is nu 2)
+        - Als er 1 tussen zit die 0 heeft als rest, dan is het geen priemgetal.
+        - Dat is niet het geval, dus 3 is een priemgetal, en dus voeg je het toe aan de lijst ( de lijst is nu 2 en 3)
+        4, probeer je te delen door de volledige lijst van de priemgetallen.
+        - Er zit er 1 tussen die bij de deling 0 geeft als rest (4 delen door 2 --> Rest 0)
+        En zo doe je verder.
+
+      - Dit is een andere oplossing dan 9.01, maar ze werkt wel.
+
+Veel succes ermee.
+
